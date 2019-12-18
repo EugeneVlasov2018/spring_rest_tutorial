@@ -14,7 +14,7 @@ import ua.vlasovEugene.springRestTutorial.exception.UserIsUnexistException;
 @Component
 public class UserService {
 
-  private final String EXCEPTION_MESSAGE = "User wit this id is not exist";
+  private final String EXCEPTION_MESSAGE = "User with this id is not exist";
   private AtomicInteger counter = new AtomicInteger(3);
 
   private Map<Integer, User> inMemoryDb = Stream.of(new Object[][]{
